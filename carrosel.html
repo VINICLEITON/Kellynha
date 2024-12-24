@@ -41,6 +41,16 @@
         .coracao:hover {
             transform: scale(1.05);
         }
+        .caption {
+            position: absolute;
+            bottom: 60px; /* Ajuste a posição conforme necessário */
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -48,20 +58,27 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="img/c1.png" alt="Primeiro Slide">
+                <div class="caption">Posso não ser a melhor pessoa, mas sempre vou me esforçar para te fazer a mulher mais feliz e amada do mundo.</div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="img/c2.png" alt="Segundo Slide">
+                <div class="caption">Quando estamos juntos é como se o mundo parasse de girar, ao seu lado tudo sempre é perfeito.</div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="img/c3.png" alt="Terceiro Slide">
+                <div class="caption">Nunca fui tão feliz e nunca tive tanta certeza de algo quando tenho a vontade de ter um maravilhoso futuro ao seu lado.</div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="img/c4.png" alt="Quarto Slide">
+                <div class="caption">Apesar de qualquer problema que tivermos, sempre vamos superá-los juntos e com muito amor.</div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="img/c5.png" alt="Quinto Slide">
+                <div class="caption">Não hesite em me falar qualquer problema ou aflições, sempre vou escutá-las e resolveremos juntos. EU TE AMO, MINHA PRINCESA ❤
+                    
+                </div>
             </div>
-            <div class="carousel-item">
+           <div class="carousel-item">
                 <iframe src="coracao.html" frameborder="0" width="100%" height="300" class=""></iframe>
                 <p class="coracao">Feliz aniversário, meu amor! Continue sendo essa pessoa muito foda. Desejo tudo de melhor para você (no caso, eu).😘</p>
             </div>
@@ -75,33 +92,8 @@
             <span class="sr-only">Próximo</span>
         </a>
     </div>
-
-    <div class="footer">
-        <p id="frase">Posso não ser a melhor pessoa, mas sempre vou me esforçar para te fazer a mulher mais feliz e am ada do mundo.</p>
+    
+        
     </div>
-
-    <script>
-        const frases = [
-            "Posso não ser a melhor pessoa, mas sempre vou me esforçar para te fazer a mulher mais feliz e amada do mundo.",
-            "Quando estamos juntos é como se o mundo parasse de girar, ao seu lado tudo sempre é perfeito.",
-            "Nunca fui tão feliz e nunca tive tanta certeza de algo quando tenho a vontade de ter um maravilhoso futuro ao seu lado.",
-            "Apesar de qualquer problema que tivermos, sempre vamos superá-los juntos e com muito amor.",
-            "Você é a razão do meu sorriso e a luz dos meus dias.",
-            "A cada dia que passa, meu amor por você só aumenta.",
-            "❤"
-        ];
-
-        const fraseElement = document.getElementById('frase');
-        const carouselItems = document.querySelectorAll('.carousel-item');
-
-        carouselItems.forEach((item, index) => {
-            item.addEventListener('slid.bs.carousel', () => {
-                fraseElement.textContent = frases[index];
-            });
-        });
-
-        // Inicializa com a primeira frase
-        fraseElement.textContent = frases[0];
-    </script>
 </body>
 </html>
